@@ -1,6 +1,6 @@
 
 describe('AppComponent', () => {
   it('should pass', () => {
-    expect(true).toBeTruthy();
+    expect(false).toBeTruthy();
   });
 });
