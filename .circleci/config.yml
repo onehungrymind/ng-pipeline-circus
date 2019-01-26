@@ -17,5 +17,9 @@ jobs:
       - run: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
       - run:
             name: Build Succeeds
-            command: curl https://maker.ifttt.com/use/bCyHD-R_WJRuU35HY12_FV
+            command: curl https://maker.ifttt.com/trigger/build_succeeded/with/key/bCyHD-R_WJRuU35HY12_FV
             when: on_success
+      - run:
+            name: Build Fails
+            command: curl https://maker.ifttt.com/trigger/build_failed/with/key/bCyHD-R_WJRuU35HY12_FV
+            when: on_fail
