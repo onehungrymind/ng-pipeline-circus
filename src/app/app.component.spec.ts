@@ -32,4 +32,8 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to ng-pipeline-circus!');
   });
+
+  it('should pass', () => {
+    expect(false).toBeTruthy();
+  });
 });
